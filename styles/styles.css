@@ -274,9 +274,14 @@ blockquote {
 
 .img-card-portfolio {
     width: 100%;
-    max-height: 200px; /* Ajusta la altura máxima de la imagen */
-    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
-    display: block; /* Elimina espacio extra debajo de la imagen */
+    max-height: 200px; 
+    object-fit: cover;
+    display: block;
+}
+
+.img-card-portfolio:hover {
+    filter: grayscale(90%);
+    transition: all 0.1s ease-in-out;
 }
 
 .container-card-portfolio {
@@ -287,7 +292,7 @@ blockquote {
     padding: 20px;
     border: 5px solid rgb(229, 229, 229);
     border-radius: 10px;
-    min-height: 400px;
+    min-height: 576px;
     margin: auto;
 }
 
@@ -302,8 +307,6 @@ blockquote {
     padding: 30px;
 }
 
-
-/* El h5 y el div ocupan 50% cada uno */
 .container-card-portfolio > h5,
 .container-card-portfolio > div {
     width: 100%;
@@ -318,7 +321,6 @@ blockquote {
     margin-top: 6em;
 }
 
-/* Alineación centrada de los textos dentro del h5 y div */
 .container-card-portfolio > h5 {
     margin: 50px;
     font-size: 2em;
@@ -334,38 +336,32 @@ blockquote {
     text-align: center;
 }
 
-/* Separar los enlaces "Site" y "GitHub" */
 .card-portfolio-links a {    
-    margin-right: 50px; /* Espacio entre los enlaces */
+    margin-right: 50px;
 }
 
-.card-portfolio-links a:last-child {
-    
-    margin-right: 0; /* Elimina el margen derecho del último enlace */
+.card-portfolio-links a:last-child {    
+    margin-right: 0;
 }
 
-/* Separar los enlaces del texto superior */
 .card-portfolio-links {
-    margin-top: 30px; /* Ajusta el espacio superior según sea necesario */
+    margin-top: 30px;
     margin-bottom: 50px;
 }
 
-/* Estilo base para las etiquetas <a> */
 .card-portfolio-links a {
     border: 3px solid rgb(229, 229, 229);
     border-radius: 10px;
-    background-color: transparent; /* Fondo transparente por defecto */
-    padding: 10px 20px; /* Espaciado interno para un mejor diseño */
-    text-decoration: none; /* Elimina subrayado en los enlaces */
-    transition: all 0.3s ease; /* Transición suave para el hover */
+    background-color: transparent;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-/* Estilo al hacer hover */
 .card-portfolio-links a:hover {
-    color: black; /* Cambia el color del texto a negro */
+    color: black;
     background-color: rgb(229, 229, 229);
 }
-
 
 
 
@@ -390,42 +386,295 @@ blockquote {
 
 
 
+/* CV */
 
+/* download */
 
+.cv_download_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 7em;
+    margin-bottom: 8em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
 
-
-
-/* botones */
-
-.btn-primary {
-    color: rgb(229, 229, 229);
-    background-color: transparent;
-    border-color: rgb(229, 229, 229);
 }
 
-.btn-primary:hover {
-    background-color: rgb(229, 229, 229);
+#download_cv a {
+    border: 3px solid rgb(229, 229, 229);
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.5em;
+    
+}
+
+#download_cv a:hover {
     color: black;
-    border-color: transparent;
+    background-color: rgb(229, 229, 229);
+}
+
+#download_cv_description p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: rgba(229, 229, 229, 0.761);
+    margin-top: 2em;
+    font-style: italic;
+    font-weight: lighter;
+    
+}
+
+
+
+
+
+
+/* EXPERIENCIA */
+
+.professional_experience_section,
+.education_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.professional_experience_section article,
+.education_section article {
+    margin-bottom: 7rem; /* Espaciado entre los artículos */
+    width: 100%;
+    max-width: 80%; /* Ancho máximo relativo para mejorar el centrado */
+    text-align: left;
+}
+
+.professional_experience_section ul,
+.education_section ul {
+    margin-top: 2rem;
+    margin-top: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.professional_experience_section ul li,
+.education_section ul li {
+    display: flex;
+    align-items: center; /* Alinea la imagen y el texto en la misma línea */
+    margin-bottom: 1rem; /* Espaciado entre los elementos de la lista */
+    font-size: 1rem; /* Tamaño del texto */
+    font-weight: lighter;
+}
+
+.professional_experience_section ul li img,
+.education_section ul li img {
+    width: 1.25rem; /* Tamaño pequeño de la imagen */
+    height: auto;
+    margin-right: 0.5rem; /* Espacio entre la imagen y el texto */
+}
+
+.cv_section_title_h2 {
+    font-family: PirataOne-Regular;
+    font-size: 4rem;
+    font-weight: lighter;
+    margin-bottom: 5rem; /* Margen inferior */
+    text-align: center;
+}
+
+.professional_experience_section h4,
+.education_section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.professional_experience_section ul li a,
+.education_section ul li a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.professional_experience_section ul li a:hover,
+.education_section ul li a:hover {
+    color: #0056b3;
+}
+
+
+
+
+/* SERVICES */
+
+.services_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    min-height: 100vh; /* Para centrar verticalmente, ocupa toda la altura de la pantalla */
+}
+
+.services_description {
+    max-width: 60%; /* Ancho máximo relativo para controlar la extensión del texto */
+    margin-bottom: 6rem; /* Espaciado entre la descripción y el botón */
+    font-size: 1.125rem; /* Tamaño relativo del texto */
+}
+
+.services_p{
+    font-style: italic;
+}
+
+.services_description p {
+    line-height: 1.5; /* Mejora la legibilidad del texto */
+    margin-top: 3em;
+    margin-bottom: 2em;
+    
+}
+
+.services_button a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem; /* Tamaño del botón */
+    border: 3px solid rgb(229, 229, 229);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+    border-radius: 10px;
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold;
+    font-size: 2rem; /* Tamaño relativo del texto */
+}
+
+.services_button a:hover {
+    background-color: rgb(229, 229, 229);
+    color: #000; /* Asegura que el texto siga siendo negro */
+}
+
+#p_highlight{
+    font-weight: bolder;    
+    font-size: 1.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* CONTACT */
+
+/* Main contact section */
+.main-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.center-title {
+    font-family: PirataOne-Regular;
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Form styles */
+.form {
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 500px; /* Limita el ancho del formulario */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .form-control {
-    border: transparent;
-    border-bottom: 2px solid rgb(229, 229, 229);
-    color: #495057;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none; /* Elimina todos los bordes */
+    border-bottom: 3px solid #fff; /* Solo el borde inferior en blanco */
+    border-radius: 0; /* Elimina el redondeo de los bordes */
     background-color: transparent;
 }
 
-.row ul li {
-    list-style: none;
+/* Form buttons */
+.form-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.lego_image img {
-    width: 15px;
-    margin-right: 20px;
-    float: left;
-    margin-right: 5px;
+.form-buttons-inner {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
+
+button {
+    margin-top: 3rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem; /* Tamaño del botón */
+    border: 3px solid rgb(229, 229, 229);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgb(229, 229, 229);
+    color: #000; /* Asegura que el texto siga siendo negro */
+}
+
+/* Icons section */
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 3rem;
+}
+
+.icon-inner {
+    margin: 0 1rem;
+}
+
+.icon-inner a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.icon-inner a:hover {
+    color: #000;
+}
+
+
+
+
+
 
 
 
@@ -440,43 +689,36 @@ footer {
 footer {
     display: flex;
     flex-direction: column;
-    /* Para alinear los elementos uno debajo del otro */
     align-items: center;
-    /* Centra los elementos horizontalmente */
     text-align: center;
-    /* Centra el texto dentro de los elementos */
     padding: 20px;
-    /* Agrega un poco de espacio alrededor del contenido */
 }
 
 footer div,
 footer ul {
     margin: 10px 0;
-    /* Agrega un pequeño margen vertical entre los elementos */
 }
 
 footer ul {
     list-style-type: none;
-    /* Elimina los puntos de la lista */
     padding: 0;
-    /* Elimina el padding por defecto del ul */
 }
+
+
+
 
 
 /* media queries */
 
-
 @media (max-width: 375px) {
     header {
         position: static;
-
     }
 
     #imagen_personal {
         margin-top: -100px;
         margin-bottom: 100px;
     }
-
 }
 
 
@@ -491,17 +733,14 @@ footer ul {
         background-color: rgba(229, 229, 229, 0.1);;
     }
 
-    .section_portfolio {
-        
+    .section_portfolio {        
         margin-bottom: 200px;
     }
-
 }
 
 @media (max-width: 768px) {
 
     .personal-container {
-
         margin-top: 100px;
         margin-bottom: 100px;
     }
@@ -563,13 +802,12 @@ footer ul {
     }
 
     blockquote {
-
         width: 60%;
         margin: 0 auto;
     }
-
-
 }
+
+
 
 /* about-me */
 
@@ -577,7 +815,6 @@ footer ul {
     #about_me {
         padding: 10px;
     }
-
 
     .container-about-me p {
         font-size: 1.15em;
@@ -588,28 +825,27 @@ footer ul {
 }
 
 @media (min-width: 769px) {
+
     #about_me_title h2 {
         font-size: 2em;
     }
-
     .container-about-me p {
         font-size: 1.1em;
     }
 }
 
 
+
+
 /* Portfolio QUERYS*/
 
-
-/* Estilo para pantallas pequeñas */
 @media (max-width: 1023px) {
     .section_portfolio {
-        grid-template-columns: 1fr; /* Las cards ocupan el ancho completo en pantallas pequeñas */
+        grid-template-columns: 1fr;
     }
 
     .container-card-portfolio {
-        max-width: 100%; /* Las cards ocupan el ancho completo */
-        margin-bottom: 20px; /* Espacio entre las cards */
-     
+        max-width: 85%;
+        margin-bottom: 20px;     
     }
 }

@@ -5,45 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CV de Andrei Veis, profesional audiovisual en transición al mundo IT">
-    <meta name="keywords" content="CV, IT, programación, desarrollo software">
+    <meta name="keywords" content="CV, audiovisual, IT, programación, desarrollo software">
+    <meta name="author" content="Andrei Veis">
     <title>Contact</title>
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin as="font">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="../index.html">Andrei Veis</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav>
+            <a href="../index.html" id="nav_name">Andrei Veis</a>
+
+            <!-- boton aculto -->
+            <button id="navbar-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto text-right">
-                    <li class="nav-item">
-                        <a class="nav-link px-4" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4" href="cv.html">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4" href="contact.html">Contact Me</a>
-                    </li>
+
+            <div id="navbar-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -51,57 +45,67 @@
 
     <!-- form -->
 
-    <div class="container mt-5 d-flex justify-content-center">
-        <div class="col-12 col-md-6"> <!-- Este div controla el ancho -->
-            <h2 class="mb-4 text-center">Contacto</h2>
-            <form>
-                <div class="mb-3">
-                    <input type="text" class="form-control" id="fullName" placeholder="Nombre y Apellido" required>
+    <main class="main-contact">
+        <h2 class="center-title">Contacto</h2>
+
+        <form class="form">
+            <div class="form-group">
+                <input type="text" class="form-control" id="fullName" placeholder="Nombre y Apellido" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="consulta" rows="4" placeholder="¿En qué puedo ayudarte?"
+                    required></textarea>
+            </div>
+            <div class="form-buttons">
+                <div class="form-buttons-inner">
+                    <button type="reset">Borrar</button>
                 </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+                <div class="form-buttons-inner">
+                    <button type="submit">Enviar</button>
                 </div>
-                <div class="mb-3">
-                    <textarea class="form-control" id="consulta" rows="4" placeholder="¿En qué puedo ayudarte?"
-                        required></textarea>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <button type="reset" class="btn btn-secondary">Borrar</button>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </div>
-            </form>
-        </div>
-    </div>
+            </div>
+        </form>
+
+    </main>
 
     <!-- icons -->
 
-    <div class="container mt-5 text-center">
-        <div class="d-flex justify-content-center mt-4">
+    <section class="icons">
+
+        <div class="icon-inner">
             <a href="https://wa.me/541168075866" target="_blank" class="px-3" aria-label="WhatsApp">
                 <i class="fab fa-whatsapp fa-3x text-white"></i>
             </a>
+        </div>
+        <div class="icon-inner">
             <a href="mailto:andrei.veis.360@gmail.com" target="_blank" class="px-3">
                 <i class="fas fa-envelope fa-3x text-white"></i>
             </a>
         </div>
-    </div>
+
+    </section>
 
     <!-- footer -->
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-          <span class="text-muted">© 2024 Andrei Veis<a href="https://github.com/andreiveisuade" target="_blank">
-            <i class="fab fa-github"></i>
-        </a></span>
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="text-muted">© 2024 Andrei Veis<a href="https://github.com/andreiveisuade" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a></span>
         </div>
-    
+
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <p class="font-weight-light justify-content-center">andrei.veis.360@gmail.com</p>
         </ul>
-      </footer>
+    </footer>
 
     <!-- script -->
 
