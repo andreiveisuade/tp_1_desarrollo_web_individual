@@ -1,0 +1,615 @@
+@font-face {
+    font-family: PirataOne-Regular;
+    src: url("../fonts/PirataOne-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(229, 229, 229);
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    flex-direction: column;
+    min-height: 680px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/background_curved_lines.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+/* nav */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+#navbar-menu {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 20px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-bottom: 5px solid rgb(229, 229, 229);
+    width: 100vw;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+}
+
+nav button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+nav div {
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: auto;
+}
+
+#navbar-menu {
+    justify-content: end;
+}
+
+.nav-link {
+    display: inline-block;
+}
+
+.navbar-brand {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+}
+
+.navbar-toggler {
+    border: 0px solid transparent;
+    align-items: end;
+}
+
+li a {
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+li a:hover {
+    border: 2px solid white;
+    border-radius: 4px;
+    transition: border 0.3s ease-in-out;
+}
+
+#nav_name {
+    font-family: PirataOne-Regular;
+    letter-spacing: 0px;
+    font-size: 2rem;
+    min-width: max-content;
+}
+
+
+
+
+
+
+
+/* home__descripcion__personal */
+
+.personal-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 15%;
+    box-sizing: border-box;
+}
+
+.personal-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.personal-image-container,
+#personal_image_description {
+    flex: 1;
+}
+
+#personal_image_description {
+    padding: 60px;
+    background-color: rgba(240, 248, 255, 0.045);
+    font-size: 1.15em;
+    flex: 1;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#personal_name {
+    font-family: PirataOne-Regular;
+    letter-spacing: 2px;
+    font-size: 5rem;
+}
+
+#imagen_personal {
+    border: 5px solid rgb(229, 229, 229);
+    border-radius: 10px;
+    max-width: 450px;
+    height: auto;
+}
+
+blockquote {
+    font-size: 1.25rem;
+}
+
+
+
+
+
+
+
+/* about-me __ home */
+
+#about_me {
+    padding: 20px;
+}
+
+#about_me_title h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.container-about-me {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container-about-me p {
+    margin-bottom: 10%;
+    text-align: justify;
+    font-size: 1.5em;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.center-title {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* portfolio__CARDS */
+
+.main_portfolio .center-title-portfolio {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1.5em;
+    margin-top: 2em;
+    font-size: 4rem;
+    font-family: PirataOne-Regular;
+}
+
+.img-card-portfolio {
+    width: 100%;
+    max-height: 200px; /* Ajusta la altura máxima de la imagen */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+    display: block; /* Elimina espacio extra debajo de la imagen */
+}
+
+.container-card-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 5px solid rgb(229, 229, 229);
+    border-radius: 10px;
+    min-height: 400px;
+    margin: auto;
+}
+
+#card-avant{
+    min-width: 40%;
+}
+
+.section_portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5%;
+    padding: 30px;
+}
+
+
+/* El h5 y el div ocupan 50% cada uno */
+.container-card-portfolio > h5,
+.container-card-portfolio > div {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+#h2-push-down{
+    margin-top: 6em;
+}
+
+/* Alineación centrada de los textos dentro del h5 y div */
+.container-card-portfolio > h5 {
+    margin: 50px;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;    
+}
+
+.container-card-portfolio > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Separar los enlaces "Site" y "GitHub" */
+.card-portfolio-links a {    
+    margin-right: 50px; /* Espacio entre los enlaces */
+}
+
+.card-portfolio-links a:last-child {
+    
+    margin-right: 0; /* Elimina el margen derecho del último enlace */
+}
+
+/* Separar los enlaces del texto superior */
+.card-portfolio-links {
+    margin-top: 30px; /* Ajusta el espacio superior según sea necesario */
+    margin-bottom: 50px;
+}
+
+/* Estilo base para las etiquetas <a> */
+.card-portfolio-links a {
+    border: 3px solid rgb(229, 229, 229);
+    border-radius: 10px;
+    background-color: transparent; /* Fondo transparente por defecto */
+    padding: 10px 20px; /* Espaciado interno para un mejor diseño */
+    text-decoration: none; /* Elimina subrayado en los enlaces */
+    transition: all 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Estilo al hacer hover */
+.card-portfolio-links a:hover {
+    color: black; /* Cambia el color del texto a negro */
+    background-color: rgb(229, 229, 229);
+}
+
+
+
+
+
+/* cards-produccion-audiovisual */
+
+.h5-card-portfolio{
+    font-size: 1.75em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.descripcion-card{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+/* botones */
+
+.btn-primary {
+    color: rgb(229, 229, 229);
+    background-color: transparent;
+    border-color: rgb(229, 229, 229);
+}
+
+.btn-primary:hover {
+    background-color: rgb(229, 229, 229);
+    color: black;
+    border-color: transparent;
+}
+
+.form-control {
+    border: transparent;
+    border-bottom: 2px solid rgb(229, 229, 229);
+    color: #495057;
+    background-color: transparent;
+}
+
+.row ul li {
+    list-style: none;
+}
+
+.lego_image img {
+    width: 15px;
+    margin-right: 20px;
+    float: left;
+    margin-right: 5px;
+}
+
+
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: -200px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    /* Para alinear los elementos uno debajo del otro */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    text-align: center;
+    /* Centra el texto dentro de los elementos */
+    padding: 20px;
+    /* Agrega un poco de espacio alrededor del contenido */
+}
+
+footer div,
+footer ul {
+    margin: 10px 0;
+    /* Agrega un pequeño margen vertical entre los elementos */
+}
+
+footer ul {
+    list-style-type: none;
+    /* Elimina los puntos de la lista */
+    padding: 0;
+    /* Elimina el padding por defecto del ul */
+}
+
+
+/* media queries */
+
+
+@media (max-width: 375px) {
+    header {
+        position: static;
+
+    }
+
+    #imagen_personal {
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    #imagen_personal {
+        border: none;
+        height: 400px;
+    }
+
+    .container-card-portfolio {
+        border: none;
+        background-color: rgba(229, 229, 229, 0.1);;
+    }
+
+    .section_portfolio {
+        
+        margin-bottom: 200px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .personal-container {
+
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #nav_name {
+        z-index: 9999;
+    }
+
+    nav button {
+        display: inline-block;
+    }
+
+    #navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #navbar-menu.active {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        border-bottom: 5px solid rgb(229, 229, 229);
+        width: 100vw;
+    }
+
+    nav ul li {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    #navbar-toggler {
+        z-index: 9999;
+    }
+}
+
+@media (max-width: 1200px) {
+    .personal-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+
+    .personal-image-container,
+    #personal_image_description {
+        width: 100%;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    blockquote {
+
+        width: 60%;
+        margin: 0 auto;
+    }
+
+
+}
+
+/* about-me */
+
+@media (max-width: 768px) {
+    #about_me {
+        padding: 10px;
+    }
+
+
+    .container-about-me p {
+        font-size: 1.15em;
+        margin-bottom: 10%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    #about_me_title h2 {
+        font-size: 2em;
+    }
+
+    .container-about-me p {
+        font-size: 1.1em;
+    }
+}
+
+
+/* Portfolio QUERYS*/
+
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 1023px) {
+    .section_portfolio {
+        grid-template-columns: 1fr; /* Las cards ocupan el ancho completo en pantallas pequeñas */
+    }
+
+    .container-card-portfolio {
+        max-width: 100%; /* Las cards ocupan el ancho completo */
+        margin-bottom: 20px; /* Espacio entre las cards */
+     
+    }
+}
