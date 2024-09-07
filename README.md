@@ -6,11 +6,15 @@ Este proyecto es el primer trabajo práctico de la materia de Desarrollo Web (UA
 
 
 ## Tecnologías Utilizadas
-Bootstrap: Se utilizó principalmente Bootstrap como framework de CSS para dar estilo y diseño responsivo a la aplicación.
 
 HTML5: Estructura el contenido de la aplicación.
 
 CSS3: Agregado estilos y efectos visuales a la aplicación.
+
+AOS: Libria para automatizar las animaciones.
+
+
+
 ## Características del Proyecto
 Diseño estético: Se buscó lograr una estética limpia y espaciada, con una paleta de colores  de alto contraste (negro, blanco y detalles en azul). Se destaca la utilización pronunciada de rectangulos blancos.
 
