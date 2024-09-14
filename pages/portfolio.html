@@ -10,8 +10,8 @@
     <title>Portafolio</title>
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin as="font">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
@@ -19,6 +19,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 
@@ -28,32 +29,28 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <!-- Nombre de la marca -->
                 <a class="navbar-brand" href="../index.html" id="nav_name">Andrei Veis</a>
-
-                <!-- Botón de colapso -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
                     aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Menú colapsable -->
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav ms-auto ">
                         <li class="nav-item d-flex justify-content-end">
                             <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item d-flex justify-content-end">
-                            <a class="nav-link active-page" href="portfolio.html">Portfolio</a>
+                            <a class="nav-link active-page" href="portfolio.html">Portafolio</a>
                         </li>
                         <li class="nav-item d-flex justify-content-end">
                             <a class="nav-link" href="cv.html">CV</a>
                         </li>
                         <li class="nav-item d-flex justify-content-end">
-                            <a class="nav-link" href="services.html">Services</a>
+                            <a class="nav-link" href="services.html">Servicios</a>
                         </li>
                         <li class="nav-item d-flex justify-content-end">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -75,13 +72,20 @@
             <div class="container-card-portfolio" id="card-avant" data-aos="fade-down" data-aos-delay="500">
                 <h5>Avant Producciones <br>Audiovisuales</h5>
                 <div>
-                    <p class="p-card-portfolio">Creación de página web para CoderHouse:</p>
+                    <p class="p-card-portfolio">Creación de sitio web para CoderHouse:</p>
                     <div class="card-portfolio-links">
-                        <a href="https://andreiveis.github.io/avant-producciones-audiovisuales-site/" target="_blank"
-                            rel="noopener noreferrer" data-aos="fade-down" data-aos-delay="600">Site</a>
-                        <a href="https://github.com/andreiveis/avant-producciones-audiovisuales-site/tree/main"
-                            target="_blank" rel="noopener noreferrer" data-aos="fade-down"
-                            data-aos-delay="700">GitHub</a>
+
+                        <div class="card-portfolio-link-a">
+                            <a href="https://andreiveis.github.io/avant-producciones-audiovisuales-site/"
+                                target="_blank" rel="noopener noreferrer" data-aos="fade-down"
+                                data-aos-delay="600">Site</a>
+                        </div>
+
+                        <div class="card-portfolio-link-a">
+                            <a href="https://github.com/andreiveis/avant-producciones-audiovisuales-site/tree/main"
+                                target="_blank" rel="noopener noreferrer" data-aos="fade-down"
+                                data-aos-delay="700">GitHub</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -95,9 +99,10 @@
 
             <!-- card 2 -->
             <div class="container-card-portfolio" data-aos="fade-down" data-aos-delay="600">
-                <a href="https://www.youtube.com/watch?v=hQONpx2SZZY" target="_blank">
+                <a href="https://www.youtube.com/watch?v=hQONpx2SZZY" target="_blank" class="image-container">
                     <img class="img-card-portfolio" src="../img/1_card.jpg"
                         alt="Directora Patricia Pouchulu dirigiendo una orquesta en el Teatro Avenida">
+                    <span class="material-icons play-icon">play_circle_filled</span>
                 </a>
                 <div>
                     <h5 class="h5-card-portfolio">Patricia Pouchulu en concierto</h5>
@@ -114,8 +119,9 @@
 
             <!-- card 3 -->
             <div class="container-card-portfolio" data-aos="fade-down" data-aos-delay="800">
-                <a href="https://www.youtube.com/watch?v=bQvmpZ0OYSU&t" target="_blank">
+                <a href="https://www.youtube.com/watch?v=bQvmpZ0OYSU&t" target="_blank" class="image-container">
                     <img class="img-card-portfolio" src="../img/2_card.jpg" alt="Carlos Groisman en concierto">
+                    <span class="material-icons play-icon">play_circle_filled</span>
                 </a>
                 <div>
                     <h5 class="h5-card-portfolio">Waldo de los Rios <br>Concierto para la guitarra criolla</h5>
@@ -129,21 +135,22 @@
                     </p>
                 </div>
             </div>
+            </div>
 
             <!-- card 4 -->
             <div class="container-card-portfolio" data-aos="fade-down" data-aos-delay="1000">
-                <a href="https://www.youtube.com/watch?v=SXmdSMpYivY" target="_blank">
+                <a href="https://www.youtube.com/watch?v=SXmdSMpYivY" target="_blank" class="image-container">
                     <img class="img-card-portfolio" src="../img/3_card.jpg" alt="Palacio Libertad">
+                    <span class="material-icons play-icon">play_circle_filled</span>
                 </a>
                 <div>
-                    <h5 class="h5-card-portfolio">New Music Of the Americas <br> Chamber Ensemble New Romanticism
-                    </h5>
+                    <h5 class="h5-card-portfolio">New Music Of the Americas <br> Chamber Ensemble New Romanticism</h5>
                     <p class="descripcion-card">
-                        Interview to Leonardo Le San and <br> Mauricio Charbonnier <br>at the Auguaribay`s
-                        Theater.<br>
+                        Interview to Leonardo Le San and <br> Mauricio Charbonnier <br>at the Auguaribay’s Theater.<br>
                         <br>
                     <div>
-                        <a id="spotify" href="https://open.spotify.com/intl-es/artist/3d0sj64Hzq8J62TTP1RxbX?si=4lpOV9yCSSGuriU2TREhEQ&nd=1&dlsi=07515049633b4925"
+                        <a id="spotify"
+                            href="https://open.spotify.com/intl-es/artist/3d0sj64Hzq8J62TTP1RxbX?si=4lpOV9yCSSGuriU2TREhEQ&nd=1&dlsi=07515049633b4925"
                             target="_blank">Spotify
                             <img src="../img/spotify-logo-white.png" alt="Spotify Logo"
                                 style="width: 24px; height: 24px; margin-left: 10px;">
@@ -158,14 +165,14 @@
     <!-- footer -->
 
     <footer>
-        <div>
-            <a href="/" class="text-muted text-decoration-none lh-1">
+        <div class="footer-content">
+            <span>© 2024 Andrei Veis</span>
+            <a href="https://github.com/andreiveisuade" target="_blank" class="github-link">
+                <i class="fab fa-github github-icon"></i>
             </a>
-            <span>© 2024 Andrei Veis<a href="https://github.com/andreiveisuade" target="_blank"></a></span>
         </div>
-
-        <ul>
-            <p>andrei.veis.360@gmail.com</p>
+        <ul class="contact-info">
+            <li><p>andrei.veis.360@gmail.com</p></li>
         </ul>
     </footer>
 
@@ -173,12 +180,12 @@
     <!-- scripts -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
