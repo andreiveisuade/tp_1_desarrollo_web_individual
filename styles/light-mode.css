@@ -3,7 +3,19 @@ body.light-mode {
     color: #000000;
 }
 
-/* NAVBAR Y ENLACES */
+body.light-mode::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/background_curved_lines-light.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
 body.light-mode .navbar {
     background-color: rgba(255, 255, 255, 0.9) !important;
 }
@@ -24,7 +36,6 @@ body.light-mode .navbar .nav-link.active-page {
     color: #0000ff; 
 }
 
-/* TEXTOS Y ELEMENTOS */
 body.light-mode * {
     color: #000000;
 }
@@ -37,21 +48,18 @@ body.light-mode #nav_name {
     color: #000000;
 }
 
-/* BORDE IMG PERSONAL */
 body.light-mode #imagen_personal {
     border: 5px solid #000000;
 }
 
-/* FONDO Y TEXTO SOBRE MI */
 body.light-mode #about_me {
-    background-color: rgba(240, 248, 255, 0.9);
+    background-color: transparent;
 }
 
 body.light-mode .container-about-me p {
     color: #000000;
 }
 
-/* TITULOS */
 body.light-mode h1,
 body.light-mode h2,
 body.light-mode h3,
@@ -61,7 +69,6 @@ body.light-mode h6 {
     color: #000000;
 }
 
-/* CARDS */
 body.light-mode .container-card-portfolio {
     background-color: rgba(255, 255, 255, 0.5);
     border: 5px solid #000000;
@@ -81,7 +88,36 @@ body.light-mode .container-card-portfolio a:hover {
     background-color: #000000;
 }
 
-/* BOTONES */
+body.light-mode .cv_download_section {
+    background-color: transparent;
+    color: #000000;
+}
+
+body.light-mode #download_cv a {
+    color: #000000;
+    border: 3px solid #000000;
+    background-color: #ffffff;
+}
+
+body.light-mode #download_cv a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+body.light-mode #download_cv_description p {
+    color: #333333;
+}
+
+#spotify {
+    text-decoration: none;
+    color: #000000;    
+    border: none;    
+}
+
+#spotify:hover {
+    background-color: transparent;
+}
+
 body.light-mode button {
     border: 3px solid #000000;
     color: #000000;
@@ -92,7 +128,6 @@ body.light-mode button:hover {
     color: #ffffff;
 }
 
-/* FOOTER */
 body.light-mode footer {
     background-color: rgba(255, 255, 255, 0.9);
     border-top: 1px solid #000000;
@@ -111,7 +146,6 @@ body.light-mode .github-icon {
     color: #000000;
 }
 
-/* FORM */
 body.light-mode .form-control {
     border-bottom: 3px solid #000000;
     color: #000000;
@@ -127,17 +161,19 @@ body.light-mode .form-control:focus {
     color: #000000;
 }
 
-/* ENLACES */
 body.light-mode a {
     color: #0000ff;
 }
 
 body.light-mode a:hover {
-    color: #0056b3;
+    color: black;
 }
 
-/* scrollToTop  */
 body.light-mode #scrollToTopBtn {
     background-color: #000000;
     color: #ffffff;
+}
+
+body.light-mode .icons .icon-inner a i {
+    color: #000000 !important;
 }
