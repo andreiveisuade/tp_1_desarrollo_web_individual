@@ -1,0 +1,143 @@
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* NAVBAR Y ENLACES */
+body.light-mode .navbar {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+body.light-mode .navbar .nav-link {
+    color: #000000;
+}
+
+body.light-mode .navbar .nav-link:hover {
+    border: 1px solid #000000;
+}
+
+body.light-mode .navbar .navbar-brand {
+    color: #000000;
+}
+
+body.light-mode .navbar .nav-link.active-page {
+    color: #0000ff; 
+}
+
+/* TEXTOS Y ELEMENTOS */
+body.light-mode * {
+    color: #000000;
+}
+
+body.light-mode header nav {
+    border-bottom: 3px solid #000000;
+}
+
+body.light-mode #nav_name {
+    color: #000000;
+}
+
+/* BORDE IMG PERSONAL */
+body.light-mode #imagen_personal {
+    border: 5px solid #000000;
+}
+
+/* FONDO Y TEXTO SOBRE MI */
+body.light-mode #about_me {
+    background-color: rgba(240, 248, 255, 0.9);
+}
+
+body.light-mode .container-about-me p {
+    color: #000000;
+}
+
+/* TITULOS */
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6 {
+    color: #000000;
+}
+
+/* CARDS */
+body.light-mode .container-card-portfolio {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 5px solid #000000;
+}
+
+body.light-mode .container-card-portfolio h5 {
+    color: #000000;
+}
+
+body.light-mode .container-card-portfolio a {
+    color: #000000;
+    border: 3px solid #000000;
+}
+
+body.light-mode .container-card-portfolio a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+/* BOTONES */
+body.light-mode button {
+    border: 3px solid #000000;
+    color: #000000;
+}
+
+body.light-mode button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* FOOTER */
+body.light-mode footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top: 1px solid #000000;
+}
+
+body.light-mode footer .footer-content span,
+body.light-mode footer .contact-info li p {
+    color: #000000;
+}
+
+body.light-mode .github-link {
+    color: #000000;
+}
+
+body.light-mode .github-icon {
+    color: #000000;
+}
+
+/* FORM */
+body.light-mode .form-control {
+    border-bottom: 3px solid #000000;
+    color: #000000;
+}
+
+body.light-mode .form-control::placeholder {
+    color: #000000;
+}
+
+body.light-mode .form-control:focus {
+    border-bottom: 3px solid #007bff;
+    background-color: transparent;
+    color: #000000;
+}
+
+/* ENLACES */
+body.light-mode a {
+    color: #0000ff;
+}
+
+body.light-mode a:hover {
+    color: #0056b3;
+}
+
+/* scrollToTop  */
+body.light-mode #scrollToTopBtn {
+    background-color: #000000;
+    color: #ffffff;
+}

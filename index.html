@@ -19,6 +19,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/scrollToTop.css">
+    <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="./styles/light-mode.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
@@ -27,7 +29,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html" id="nav_name">Andrei Veis</a>
+                <a class="navbar-brand" href="../index.html" id="nav_name">Andrei Veis</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
                     aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,8 +37,14 @@
 
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item d-flex justify-content-end align-items-center">
+                            <label class="switch">
+                                <input type="checkbox" id="theme-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                        </li>
                         <li class="nav-item d-flex justify-content-end">
-                            <a class="nav-link active-page" href="index.html">Home</a>
+                            <a class="nav-link active-page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item d-flex justify-content-end">
                             <a class="nav-link" href="./pages/portfolio.html">Portafolio</a>
@@ -50,66 +58,71 @@
                         <li class="nav-item d-flex justify-content-end">
                             <a class="nav-link" href="./pages/contact.html">Contacto</a>
                         </li>
+
                     </ul>
                 </div>
             </div>
         </nav>
-
     </header>
 
+    <main>
 
-    <!-- Image -->
-
-    <div class="personal-container">
-        <div class="personal-image-container" data-aos="fade-down" data-aos-delay="500">
-            <img id="imagen_personal" src="./img/imagen_personal_3.png"
-                alt="Foto de Andrei Veis, desarrollador de software">
-        </div>
-        <div id="personal_image_description" data-aos="fade-down" data-aos-delay="700">
-            <h1 id="personal_name" data-aos="fade-down" data-aos-delay="800">Andrei Veis</h1>
-            <blockquote data-aos="zoom-out" data-aos-delay="900">De pequeño, los Legos fueron mi puerta de entrada a un
-                mundo de creación infinita. <br> Hoy, el
-                código se ha convertido en mis nuevos bloques de construcción.</blockquote>
-        </div>
-    </div>
-
-    <!-- About me -->
-
-    <div id="about_me">
-        <div id="about_me_title">
-            <h2 class="center-title" data-aos="fade-down" data-aos-delay="600">Sobre mi</h2>
+        <!-- Image -->
+        <div class="personal-container">
+            <div class="personal-image-container" data-aos="fade-down" data-aos-delay="500">
+                <img id="imagen_personal" src="./img/imagen_personal_3.png"
+                    alt="Foto de Andrei Veis, desarrollador de software">
+            </div>
+            <div id="personal_image_description" data-aos="fade-down" data-aos-delay="700">
+                <h1 id="personal_name" data-aos="fade-down" data-aos-delay="800">Andrei Veis</h1>
+                <blockquote data-aos="zoom-out" data-aos-delay="900">De pequeño, los Legos fueron mi puerta de entrada a
+                    un
+                    mundo de creación infinita. <br> Hoy, el
+                    código se ha convertido en mis nuevos bloques de construcción.</blockquote>
+            </div>
         </div>
 
-        <div class="container-about-me">
-            <p data-aos="fade-down" data-aos-delay="700">
-                Nací en Ekaterinburg, Rusia (1993) y resido en CABA, Argentina, desde hace 25 años. Me he
-                formado como productor audiovisual y he trabajado en diversas ramas del sector. Tuve la oportunidad de
-                liderar equipos
-                de trabajo y emprender proyectos como Avant Producciones Audiovisuales.
-            </p>
-            <p data-aos="fade-down" data-aos-delay="800">
-                Me apasiona crear y entender cómo funciona el mundo que nos rodea, especialmente el arte, la ciencia, la
-                economía, la tecnología y criptomonedas.
-            </p>
-            <p data-aos="fade-downt" data-aos-delay="900">
-                Actualmente, enfoco todos mis esfuerzos en crecer como <strong>desarrollador de software</strong>.
-                Me he formado en CoderHouse como <strong>desarrollador Full-Stack</strong> y he realizado diversos
-                cursos en Udemy sobre principios de
-                <strong>programación</strong> y
-                <strong>desarrollo Web 3.0</strong>.
-            </p>
-            <p data-aos="fade-down" data-aos-delay="1000">Hoy en día, estoy estudiando la
-                carrera de tecnicatura en desarrollo software en UADE.
-            </p>
-            <p data-aos="fade-down" data-aos-delay="1100">
-                <em>En este momento, busco ampliar mi experiencia profesional en el campo del desarrollo de
-                    software.</em>
-            </p>
+        <!-- About me -->
+
+        <div id="about_me">
+            <div id="about_me_title">
+                <h2 class="center-title" data-aos="fade-down" data-aos-delay="600">Sobre mi</h2>
+            </div>
+
+            <div class="container-about-me">
+                <p data-aos="fade-down" data-aos-delay="700">
+                    Nací en Ekaterinburg, Rusia (1993) y resido en CABA, Argentina, desde hace 25 años. Me he
+                    formado como productor audiovisual y he trabajado en diversas ramas del sector. Tuve la oportunidad
+                    de
+                    liderar equipos
+                    de trabajo y emprender proyectos como Avant Producciones Audiovisuales.
+                </p>
+                <p data-aos="fade-down" data-aos-delay="800">
+                    Me apasiona crear y entender cómo funciona el mundo que nos rodea, especialmente el arte, la
+                    ciencia, la
+                    economía, la tecnología y criptomonedas.
+                </p>
+                <p data-aos="fade-downt" data-aos-delay="900">
+                    Actualmente, enfoco todos mis esfuerzos en crecer como <strong>desarrollador de software</strong>.
+                    Me he formado en CoderHouse como <strong>desarrollador Full-Stack</strong> y he realizado diversos
+                    cursos en Udemy sobre principios de
+                    <strong>programación</strong> y
+                    <strong>desarrollo Web 3.0</strong>.
+                </p>
+                <p data-aos="fade-down" data-aos-delay="1000">Hoy en día, estoy estudiando la
+                    carrera de tecnicatura en desarrollo software en UADE.
+                </p>
+                <p data-aos="fade-down" data-aos-delay="1100">
+                    <em>En este momento, busco ampliar mi experiencia profesional en el campo del desarrollo de
+                        software.</em>
+                </p>
+            </div>
+
         </div>
 
-    </div>
+        <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
 
-    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+    </main>
 
     <!-- footer -->
 
@@ -127,8 +140,8 @@
         </ul>
     </footer>
 
-
     <!-- scripts -->
+    <script src="./scripts/dark-light-mode-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
