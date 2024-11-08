@@ -24,7 +24,3 @@ Contenido Organizado: El sitio tiene una navegación clara y fácil de usar. El 
 ## Authors
 
 - Andrei Veis
-
-
-
-
