@@ -1,0 +1,20 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('mode-toggle');
+    const bodyElement = document.body;
+
+    toggleButton.addEventListener('click', function () {
+        bodyElement.classList.toggle('light-mode');
+        if (bodyElement.classList.contains('light-mode')) {
+            toggleButton.textContent = 'Modo Oscuro';
+        } else {
+            toggleButton.textContent = 'Modo Claro';
+        }
+    });
+
+    // Establecer el texto inicial del botón según el modo actual
+    if (bodyElement.classList.contains('light-mode')) {
+        toggleButton.textContent = 'Modo Oscuro';
+    } else {
+        toggleButton.textContent = 'Modo Claro';
+    }
+});
